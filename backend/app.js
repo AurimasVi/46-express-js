@@ -6,7 +6,7 @@ server.use(express.json());
 const users = ["Alex", "Rose", "Megan"];
 // const users = [{ name: "Alex", name: "Rose", name: "Megan" }];
 
-server.get("/api/users", (req, res) => {
+server.get("/api/users", (_, res) => {
   console.log("get request received");
   res.send(users);
 });
